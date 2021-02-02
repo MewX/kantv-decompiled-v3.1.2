@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/recommend_line_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_layout"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/feedback_type_ll" android:background="@color/white" style="@style/wh2.linear2">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@+id/feedback_type_tv" android:padding="@dimen/space_15" android:text="反馈类型" android:layout_weight="1" style="@style/w_wh_w"/>
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:id="@+id/feedback_type" android:padding="@dimen/space_15" android:text="意见反馈" style="@style/w_wh_w"/>
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/wh1"/>
+    </LinearLayout>
+    <EditText android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:gravity="top" android:id="@+id/feedback_edit" android:background="@color/white" android:padding="@dimen/space_15" android:layout_width="match_parent" android:layout_height="@dimen/height_100" android:layout_marginTop="@dimen/space_10" android:hint="请填写你想要反馈的问题" android:maxLength="100"/>
+    <EditText android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@+id/forum_mail" android:background="@color/white" android:padding="@dimen/space_15" android:layout_width="match_parent" android:layout_marginTop="@dimen/space_10" android:hint="请留下您的邮箱，方便我们联系你" android:singleLine="true" style="@style/w_wh_w"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/welcome_img" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/space_0" android:src="@drawable/welcome_head" android:scaleType="fitXY" android:layout_weight="4.0" />
+        <ImageView android:id="@id/bottom_img" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/space_0" android:src="@drawable/welcome_bottom" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/welcome_exit" android:visibility="gone" android:layout_width="@dimen/width_35" android:layout_height="@dimen/height_35" android:layout_margin="@dimen/space_15" android:layout_alignParentRight="true">
+        <com.kantv.ui.view.CircularProgressBar android:id="@id/act_welcome_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/tab_top_bg" android:text="跳过" android:layout_centerInParent="true" style="@style/w_wh_w" />
+    </RelativeLayout>
+</RelativeLayout>

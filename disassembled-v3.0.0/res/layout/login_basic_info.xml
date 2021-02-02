@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_layout" />
+    <RelativeLayout android:id="@id/basic_avatar" android:background="@drawable/login_shape_bg" android:layout_width="fill_parent" android:layout_height="@dimen/height_68" android:layout_marginLeft="@dimen/space_43" android:layout_marginTop="@dimen/space_20" android:layout_marginRight="@dimen/space_43">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="头像" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_15" android:layout_alignParentRight="true">
+            <com.kantv.ui.view.CircleImageView android:id="@id/avatar" android:layout_width="@dimen/width_38" android:layout_height="@dimen/height_38" android:src="@drawable/avatar" />
+            <ImageView android:layout_width="@dimen/width_10" android:layout_height="@dimen/height_14" android:layout_marginLeft="@dimen/space_10" android:src="@drawable/right_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/basic_nickname" android:background="@drawable/login_shape_bg" android:layout_width="fill_parent" android:layout_height="@dimen/height_52" android:layout_marginLeft="@dimen/space_43" android:layout_marginTop="@dimen/space_08" android:layout_marginRight="@dimen/space_43">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="昵称" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:gravity="right" android:id="@id/nickname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:hint="请输入昵称" android:drawableRight="@drawable/right_arrow" android:drawablePadding="@dimen/space_08" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/basic_sex" android:background="@drawable/login_shape_bg" android:layout_width="fill_parent" android:layout_height="@dimen/height_52" android:layout_marginLeft="@dimen/space_43" android:layout_marginTop="@dimen/space_08" android:layout_marginRight="@dimen/space_43">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="性别" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:id="@id/sex_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:text="选择后不可更改" android:drawableRight="@drawable/right_arrow" android:drawablePadding="@dimen/space_08" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/basic_reg" android:background="@drawable/login_img_btn" android:layout_width="fill_parent" android:layout_height="@dimen/height_49" android:layout_marginLeft="@dimen/space_43" android:layout_marginTop="@dimen/space_12" android:layout_marginRight="@dimen/space_43" android:text="完成注册" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/search_box_layout" layout="@layout/search_box"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_box_layout">
+        <com.kantv.lib.recyclerview.XRecyclerView android:id="@+id/search_recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.kantv.lib.recyclerview.XRecyclerView android:id="@+id/keyWork_recycler" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

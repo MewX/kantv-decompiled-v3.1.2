@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/common_title_rl" android:background="@color/them_color" android:layout_width="match_parent" android:layout_height="@dimen/height_44">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/common_title_left" android:background="@color/them_color" android:layout_width="@dimen/width_40" android:layout_height="match_parent">
+            <ImageView android:id="@+id/common_title_leftimg" android:layout_marginLeft="@dimen/space_15" android:src="@drawable/nav_white" android:layout_centerVertical="true" style="@style/w_wh_w"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/txt_size_18sp" android:textColor="@color/white" android:id="@+id/common_title_tv" android:text="缓存路径" android:layout_centerInParent="true" style="@style/w_wh_w"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/phone_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="80dp">
+        <ImageView android:id="@+id/item_phone_img" android:layout_width="30dp" android:layout_height="44dp" android:layout_marginLeft="12dp" android:src="@drawable/phonel" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/txt_size_18sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/item_phone_title" android:layout_marginLeft="12dp" android:text="手机存储" android:maxLines="2" android:layout_toRightOf="@+id/item_phone_img" android:layout_alignTop="@+id/item_phone_img" style="@style/w_wh_w"/>
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@+id/item_phone_name2" android:layout_marginBottom="@dimen/space_03" android:text="" android:layout_toRightOf="@+id/item_phone_img" android:layout_alignParentBottom="true" style="@style/w_wh_w"/>
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@+id/item_phone_name" android:layout_marginLeft="12dp" android:text="" android:layout_toRightOf="@+id/item_phone_name2" android:layout_alignBottom="@+id/item_phone_img" style="@style/w_wh_w"/>
+        <CheckBox android:enabled="false" android:id="@+id/item_phone_check" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_02" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CustomCheckboxTheme"/>
+    </RelativeLayout>
+    <View android:layout_below="@+id/phone_layout" style="@style/style_line_horizontal"/>
+    <RelativeLayout android:id="@+id/sd_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="80dp">
+        <ImageView android:id="@+id/sd_iv" android:layout_width="30dp" android:layout_height="44dp" android:layout_marginLeft="12dp" android:src="@drawable/sdl" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/txt_size_18sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/sd_title" android:layout_marginLeft="12dp" android:text="SD卡" android:maxLines="2" android:layout_toRightOf="@+id/sd_iv" android:layout_alignTop="@+id/sd_iv" style="@style/w_wh_w"/>
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@+id/sd_describe" android:layout_marginLeft="12dp" android:text="" android:layout_toRightOf="@+id/sd_iv" android:layout_alignBottom="@+id/sd_iv" style="@style/w_wh_w"/>
+        <CheckBox android:enabled="false" android:id="@+id/sd_check" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_02" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CustomCheckboxTheme"/>
+    </RelativeLayout>
+    <View android:layout_below="@+id/sd_iv" style="@style/style_line_horizontal"/>
+</LinearLayout>

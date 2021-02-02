@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/videodownload_rl" android:background="@drawable/item_videodetail_shape" android:layout_width="@dimen/width_52" android:layout_marginBottom="@dimen/space_18" style="@style/w_wh_w">
+    <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:gravity="center" android:id="@+id/item_videodownload_text" android:layout_width="@dimen/width_52" android:layout_height="@dimen/height_52" android:text="1"/>
+    <ImageView android:id="@+id/downloading" android:visibility="gone" android:src="@drawable/downloading" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/w_wh_w"/>
+    <ImageView android:id="@+id/completed" android:visibility="gone" android:src="@drawable/completed" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/w_wh_w"/>
+</RelativeLayout>

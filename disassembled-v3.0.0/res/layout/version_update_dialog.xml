@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/update_version" android:background="@drawable/version_update_bg" android:layout_width="236.0dip" android:layout_height="333.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/black" android:id="@id/latest_version" android:layout_marginLeft="24.0dip" android:layout_marginBottom="16.0dip" android:layout_above="@id/update_content" style="@style/w_wh_w" />
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/black" android:id="@id/update_content" android:layout_marginLeft="24.0dip" android:layout_marginBottom="8.0dip" android:text="更新内容：" android:layout_above="@id/update_description" style="@style/w_wh_w" />
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/update_description" android:scrollbars="vertical" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" android:maxLines="4" android:layout_above="@id/version_update_btn" style="@style/w_wh_w" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/version_update_btn" android:background="@drawable/update_bg" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="16.0dip" android:text="立即安装" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/close_update" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/close_update" android:scaleType="fitCenter" android:layout_below="@id/update_version" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_layout" />
+    <RelativeLayout android:id="@id/about_rl" android:layout_width="fill_parent" android:layout_height="@dimen/height_102">
+        <EditText android:textSize="@dimen/txt_size_16sp" android:gravity="top" android:id="@id/about_edit" android:background="@drawable/commentedit_shape_bg" android:paddingLeft="@dimen/space_15" android:paddingTop="@dimen/space_15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="用一句话来介绍你自己吧~" android:maxLength="100" />
+        <TextView android:textSize="@dimen/txt_size_13sp" android:textColor="@color/temp_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_10" android:layout_marginBottom="@dimen/space_10" android:text="0/100" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

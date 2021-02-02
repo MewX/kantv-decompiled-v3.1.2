@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/item_collect_detail_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/item_collect_detail_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:layout_centerVertical="true" style="@style/CustomCheckboxTheme"/>
+        <RelativeLayout android:id="@+id/item_collect_detail_img_rl" android:layout_width="@dimen/width_60" android:layout_height="@dimen/height_86" android:layout_margin="@dimen/space_12" android:layout_toRightOf="@+id/item_collect_detail_check">
+            <com.kantv.ui.view.ShapedImageView android:id="@+id/item_collect_detail_movie" android:layout_width="@dimen/width_60" android:layout_height="@dimen/height_86" android:scaleType="centerCrop" app:round_radius="4dp" app:shape_mode="1"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/item_collect_detail_title_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:layout_toRightOf="@+id/item_collect_detail_img_rl">
+            <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:ellipsize="end" android:id="@+id/item_collect_detail_title" android:text="猩球崛起" android:maxLines="1" style="@style/w_wh_w"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/temp_tv_color" android:ellipsize="end" android:id="@+id/item_collect_detail_tag" android:layout_marginTop="@dimen/space_07" android:layout_marginRight="@dimen/space_15" android:text="电影 | 内地 | 2015年" android:maxLines="1" android:layout_toRightOf="@+id/item_collect_detail_img_rl" android:layout_below="@+id/item_collect_detail_title_ll" style="@style/w_wh_w"/>
+        <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/temp_tv_color" android:ellipsize="end" android:id="@+id/item_collect_detail_actor" android:layout_marginTop="@dimen/space_03" android:layout_marginRight="@dimen/space_15" android:text="大马猴" android:maxLines="1" android:layout_toRightOf="@+id/item_collect_detail_img_rl" android:layout_below="@+id/item_collect_detail_tag" style="@style/w_wh_w"/>
+    </RelativeLayout>
+    <View android:layout_below="@+id/item_collect_detail_rl" android:layout_centerHorizontal="true" style="@style/style_recommend_line_horizontal"/>
+</RelativeLayout>

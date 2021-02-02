@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/common_title_rl" android:background="@color/tab_top_bg" android:layout_width="match_parent" android:layout_height="@dimen/space_66">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/title_left_ll" android:layout_width="@dimen/width_40" android:layout_height="match_parent" android:layout_marginLeft="@dimen/space_15">
+            <ImageView android:id="@+id/title_leftimg" android:layout_width="@dimen/width_11" android:layout_height="@dimen/height_18" android:src="@drawable/back" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <com.kantv.lib.indicator.ScrollIndicatorView android:layout_gravity="center" android:id="@+id/scrollIndicatorView" android:paddingLeft="@dimen/space_15" android:paddingTop="@dimen/space_09" android:paddingRight="@dimen/space_15" android:paddingBottom="@dimen/space_09" android:layout_width="wrap_content" android:layout_height="@dimen/tab_top_height" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/title_right_ll" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/space_20" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/title_rightimg" android:visibility="invisible" android:src="@drawable/delete" android:layout_alignBaseline="@+id/common_title_tv" style="@style/w_wh_w"/>
+            <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/watch_history_tv" android:id="@+id/tv_right" android:text="编辑" android:layout_alignBaseline="@+id/common_title_tv" style="@style/w_wh_w"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/common_title_rl"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/collect_edit_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height_50" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@+id/all_collect_choice" android:background="@color/whitback" android:layout_width="0dp" android:layout_height="match_parent" android:text="全选" android:layout_weight="1"/>
+        <TextView android:textColor="@color/red" android:gravity="center" android:id="@+id/collect_delete" android:background="@color/whitback" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:text="删除" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

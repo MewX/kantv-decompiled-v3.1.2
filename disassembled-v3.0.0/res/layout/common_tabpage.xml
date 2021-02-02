@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/searchresult_tabpage" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kantv.ui.view.TabPageIndicator android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="@dimen/space_40" />
+        <View android:layout_centerHorizontal="true" style="@style/style_filter_line_horizontal" />
+        <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/loaderror_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="@dimen/width_56" android:layout_height="@dimen/height_56" android:layout_marginTop="@dimen/space_100" android:src="@drawable/search_empty" />
+        <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="@color/temp_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20" android:text="抱歉，暂未搜索到相关内容" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/white" android:gravity="center" android:id="@id/request_film_tv" android:background="@drawable/request_film_shape" android:layout_width="@dimen/width_180" android:layout_height="@dimen/height_44" android:layout_marginTop="@dimen/space_30" android:text="我要求片" />
+    </LinearLayout>
+</FrameLayout>

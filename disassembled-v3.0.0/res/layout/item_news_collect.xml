@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kantv.ui.view.swipelayout.SwipeLayout android:id="@id/item_collect_swipeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_news_collect_detail" />
+        <TextView android:textSize="@dimen/txt_size_18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/item_collect_delete" android:background="@color/red" android:visibility="gone" android:layout_width="@dimen/width_100" android:layout_height="110.0dip" android:text="删除" />
+    </com.kantv.ui.view.swipelayout.SwipeLayout>
+</LinearLayout>

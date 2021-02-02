@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView style="@style/w_mh_m">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" style="@style/wh_w">
+            <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_15" style="@style/wh_w">
+                <LinearLayout android:orientation="vertical" android:id="@id/frg_videodetails_grade" style="@style/w_wh_w">
+                    <TextView android:textSize="@dimen/space_16" android:textColor="@color/cursor_color" android:id="@id/video_detail_videoname" style="@style/w_wh_w" />
+                    <TextView android:textSize="@dimen/space_12" android:textColor="@color/temp_tv_color" android:id="@id/video_detail_score" android:layout_marginTop="@dimen/space_06" style="@style/w_wh_w" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="bottom|center|right" android:id="@id/collectImg" android:padding="@dimen/space_05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_66" android:src="@drawable/watch_list" />
+                <ImageView android:layout_gravity="bottom|center|right" android:id="@id/download_video" android:padding="@dimen/space_05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_20" android:src="@drawable/dowload" />
+            </FrameLayout>
+            <View android:layout_gravity="center_horizontal" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_20" style="@style/style_filter_line_horizontal" />
+            <RelativeLayout android:id="@id/videodetails_about_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_20">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/introduce" android:text="简介" style="@style/w_wh_w" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_10" android:minHeight="@dimen/height_40" android:layout_below="@id/introduce">
+                    <TextView android:ellipsize="end" android:id="@id/about" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:maxLength="45" />
+                    <TextView android:textSize="@dimen/space_14" android:textColor="#ff4da6eb" android:layout_gravity="bottom|center|right" android:id="@id/about_extend" android:padding="@dimen/space_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="展开" android:layout_toRightOf="@id/about" />
+                </FrameLayout>
+            </RelativeLayout>
+            <View android:layout_gravity="center_horizontal" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_20" style="@style/style_filter_line_horizontal" />
+            <com.kantv.ui.view.ShapedImageView android:id="@id/videodetail_adImg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_10" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_10" android:scaleType="fitXY" app:round_radius="@dimen/space_04" app:shape_mode="round_rect" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/selectNum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20">
+                <TextView android:textSize="@dimen/space_16" android:textColor="@color/cursor_color" android:layout_marginTop="@dimen/space_15" android:text="选集" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" style="@style/w_wh_w" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/frg_videodetails_xj" android:layout_marginTop="@dimen/space_15" style="@style/wh2.linear2">
+                    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@id/frg_videodetails_uptime" android:layout_marginLeft="@dimen/space_08" android:layout_marginRight="@dimen/space_08" android:layout_weight="1.0" style="@style/w_wh_w" />
+                    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:ellipsize="end" android:id="@id/fragment_videodetail_updatanum" android:layout_marginRight="@dimen/space_20" android:text="更新至" android:maxLength="15" android:drawableRight="@drawable/profile_arrow" android:drawablePadding="@dimen/space_05" android:layout_alignParentRight="true" style="@style/w_wh_w" />
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/video_detail_playlist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20" android:layout_marginRight="@dimen/space_20" android:layout_below="@id/frg_videodetails_xj" />
+            <View android:layout_gravity="center_horizontal" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_20" style="@style/style_filter_line_horizontal" />
+            <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/frg_star_txt" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_15" android:text="影人" style="@style/w_wh_w" />
+            <android.support.v7.widget.RecyclerView android:id="@id/fragment_videodetail_star" android:layout_width="fill_parent" android:layout_height="@dimen/height_150" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_10" />
+            <View android:layout_gravity="center_horizontal" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_20" style="@style/style_filter_line_horizontal" />
+            <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/comment_txt" android:layout_margin="@dimen/space_15" android:text="评论" style="@style/w_wh_w" />
+            <LinearLayout android:orientation="vertical" android:id="@id/detail_comment_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView android:id="@id/comment_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/txt_size_13sp" android:textColor="@color/temp_tv_color" android:gravity="center" android:id="@id/all_comment_tv" android:layout_width="fill_parent" android:layout_height="@dimen/height_44" android:text="查看全部评论" />
+            </LinearLayout>
+            <View android:layout_gravity="center_horizontal" android:layout_height="@dimen/space_10" style="@style/style_filter_line_horizontal" />
+            <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/frg_videodetails_youlive" android:layout_margin="@dimen/space_15" android:text="猜你喜欢" style="@style/w_wh_w" />
+            <android.support.v7.widget.RecyclerView android:id="@id/fragment_videodetail_recommend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_10" android:layout_marginTop="@dimen/space_10" android:layout_marginRight="@dimen/space_10" android:layout_marginBottom="@dimen/space_50" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

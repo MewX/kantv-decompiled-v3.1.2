@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/item_videostar_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_06">
+    <com.kantv.ui.view.ShapedImageView android:id="@+id/item_videostar_head" android:layout_width="@dimen/width_80" android:layout_height="@dimen/height_112" android:scaleType="centerCrop" android:layout_below="@+id/frg_star_txt" app:round_radius="4dp" app:shape_mode="1"/>
+    <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/cursor_color" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/item_videostar_name" android:layout_marginTop="@dimen/space_04" android:text="诺兰" android:maxLines="2" android:lines="2" style="@style/w_wh_w"/>
+</LinearLayout>

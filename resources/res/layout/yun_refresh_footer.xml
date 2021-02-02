@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/footer_bj" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="45dp">
+        <pl.droidsonroids.gif.GifImageView android:id="@+id/shangla" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+        <TextView android:textColor="#333333" android:id="@+id/msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/listview_loading"/>
+    </LinearLayout>
+</LinearLayout>

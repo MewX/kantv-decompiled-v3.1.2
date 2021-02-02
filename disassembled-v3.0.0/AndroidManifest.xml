@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.imkan.tv" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET" android:required="true"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" android:required="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" android:required="true"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="debug.KanApplication" android:supportsRtl="true">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:launchMode="singleTask" android:name="com.kantv.ui.activity.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kantv6.com" android:scheme="http"/>
+                <data android:host="kantv6.com" android:scheme="https"/>
+                <data android:host="www.kantv6.com" android:scheme="http"/>
+                <data android:host="www.kantv6.com" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.kantv.ui.MainActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.LoginActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.kantv.ui.activity.AreaActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.kantv.ui.activity.AccountLoginActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.kantv.ui.activity.RegisterActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.kantv.ui.activity.EmailRegisterActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.BasicInfoActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.EditNicknameActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.MeAboutActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.MyInfoActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.ResetPwdActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.SendEmailResultActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.FilterActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.SearchActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.SearchResultActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.MoreRecommendActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.SetActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.HistoryActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.CollectActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.NewCollectHistroyActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.MessageActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.ReceiveMsgActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.SendMsgActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.OfflineVideoActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.OfflineVideoDetailActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.DownloadingActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kantv.ui.activity.VideoPlayActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.StarActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.StarAboutActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.HotListActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.UpdateListActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.SoareListActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.VideoScoreActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.ForumActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.FeedBackActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.SafeCenterActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.BindPhoneActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.BindEmailActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.SafeVerActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.SafeVerInputActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.CommentActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.NewsCommentActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.VersionupActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.FilePathSetActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.activity.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.kantv.ui.activity.VideoFullScreenActivity" android:screenOrientation="landscape" android:theme="@style/ActivityTheme"/>
+        <activity android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.kantv.ui.activity.NewsDetailActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.kantv.ui.androidupnpdemo.ui.TpActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.androidupnpdemo.ui.TpActivity2" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:name="com.kantv.ui.androidupnpdemo.ui.TpActivity3" android:theme="@style/ActivityTheme"/>
+        <service android:exported="false" android:name="com.kantv.ui.androidupnpdemo.service.ClingUpnpService"/>
+        <service android:exported="false" android:name="com.kantv.ui.androidupnpdemo.service.SystemService"/>
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.kantv.ui.chromecast.ExpandedControlsActivity" android:screenOrientation="portrait" android:theme="@style/ActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.kantv.ui.androidupnpdemo.ui.TpActivity"/>
+        </activity>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.kantv.ui.chromecast.CastOptionsProvider"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="\ 1106453625"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.connect.common.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.avos.avoscloud.PushService"/>
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.kantv.ui.leancloud.CustomReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.imkan.tv"/>
+                <action android:name="com.imkan.tv"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="WEIBO_APPKEY" android:value="1263775139"/>
+        <meta-data android:name="WEIBO_CHANNEL" android:value="weibo"/>
+        <provider android:authorities="com.kantv.ui" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="io.fabric.ApiKey" android:value="bd038860084705ecd3d7ee57ac7022b9583fe040"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <meta-data android:name="CHANNEL" android:value="official"/>
+        <service android:enabled="true" android:exported="true" android:name="com.kantv.ui.download.MyDownLoadService"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.imkan.tv.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <provider android:authorities="com.imkan.tv.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+    </application>
+</manifest>

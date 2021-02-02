@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/header_index" android:paddingLeft="@dimen/space_15" android:paddingTop="@dimen/space_15" android:text="最近更新" style="@style/w_wh_w" />
+</LinearLayout>

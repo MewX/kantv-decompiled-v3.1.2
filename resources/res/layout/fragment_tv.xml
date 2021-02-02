@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/tab_top_bg" android:paddingTop="@dimen/space_20" android:layout_width="match_parent" android:layout_height="@dimen/tab_height">
+        <com.kantv.lib.indicator.ScrollIndicatorView android:id="@+id/moretab_indicator" android:paddingLeft="@dimen/space_15" android:paddingTop="@dimen/space_09" android:paddingRight="@dimen/space_35" android:paddingBottom="@dimen/space_09" android:layout_width="match_parent" android:layout_height="@dimen/tab_top_height"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="@dimen/space_80" android:layout_height="@dimen/tab_top_height" android:src="@drawable/tab_top_nav_bg"/>
+    </FrameLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/search_rl" android:background="@color/tab_top_bg" android:layout_width="match_parent" android:layout_height="@dimen/search_height">
+            <com.kantv.ui.view.CircleImageView android:id="@+id/mine_head" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="15dp" android:src="@drawable/avatar"/>
+            <LinearLayout android:gravity="center" android:id="@+id/ll_search" android:background="@drawable/shape_bg" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="7dp" android:layout_toRightOf="@+id/mine_head">
+                <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="#b3deff" android:gravity="center" android:id="@+id/tv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索" android:drawableLeft="@drawable/zoom" android:drawablePadding="@dimen/space_06"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_rl">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/tab_top_viewPager" android:paddingBottom="@dimen/tab_base_height" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/feedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:layout_marginBottom="@dimen/space_69" android:src="@drawable/feedback" android:alpha="0.9"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

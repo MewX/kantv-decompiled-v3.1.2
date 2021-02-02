@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/item_search_qj" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" style="@style/wh_w">
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/item_hot_search_sort" android:background="@drawable/item_hot_search_bg" android:paddingTop="@dimen/space_01" android:paddingBottom="@dimen/space_01" android:layout_width="@dimen/width_22" android:layout_height="@dimen/width_22" android:layout_marginLeft="@dimen/space_15" android:text="12"/>
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/cursor_color" android:ellipsize="end" android:id="@+id/item_hot_search_title" android:padding="@dimen/space_08" android:layout_marginRight="@dimen/space_15" android:text="@string/app_name" android:maxLines="1" android:layout_weight="1" style="@style/w_wh_w"/>
+    </LinearLayout>
+    <View style="@style/style_line_horizontal"/>
+</LinearLayout>

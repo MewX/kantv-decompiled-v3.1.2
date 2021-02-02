@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout style="@style/wh2.linear2">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:gravity="center" android:id="@+id/item_select_ok" android:padding="@dimen/space_15" android:text="全选" android:layout_weight="1" style="@style/w_wh_w"/>
+        <View style="@style/style_line_vertical"/>
+        <TextView android:textColor="@color/red" android:gravity="center" android:id="@+id/item_select_delete" android:padding="@dimen/space_15" android:text="删除" android:layout_weight="1" style="@style/wh1.Font16"/>
+    </LinearLayout>
+    <View style="@style/style_filter_line_horizontal"/>
+</LinearLayout>

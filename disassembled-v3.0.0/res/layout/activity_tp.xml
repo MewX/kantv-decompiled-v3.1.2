@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/cast_common_bar" />
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="#ff333333" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ToolbarTheme2" app:titleTextAppearance="@style/Toolbar.TitleText" app:titleTextColor="@color/black">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/title_tb" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:maxLength="29" android:layout_centerVertical="true" />
+    </android.support.v7.widget.Toolbar>
+    <View android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" style="@style/style_line_horizontal" />
+    <ListView android:id="@id/lv_devices" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dividerHeight="0.20000005dip" />
+    <ListView android:id="@id/dlna_devices_lv" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dividerHeight="0.20000005dip" />
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@android:color/primary_text_light" android:id="@id/tv_selected" android:paddingTop="@dimen/listview_items_padding_gp_top" android:paddingBottom="@dimen/listview_items_padding_gp_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice" />
+    <Switch android:textColor="@color/textNormalColor" android:id="@id/sw_mute" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mute" />
+    <LinearLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textColor="@color/textNormalColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/progress" />
+        <SeekBar android:id="@id/seekbar_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textColor="@color/textNormalColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/volume" />
+        <SeekBar android:id="@id/seekbar_volume" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+    <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/bt_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play" android:onClick="onClick" />
+        <Button android:id="@id/bt_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pause" android:onClick="onClick" />
+        <Button android:id="@id/bt_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stop" android:onClick="onClick" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/item_index_qj" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/tab_top_bg" android:gravity="center" android:id="@+id/item_index_bt" android:padding="@dimen/space_18" android:visibility="gone" android:layout_width="match_parent" android:text="点击查看更多评论" style="@style/w_wh_w"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout1" android:paddingLeft="@dimen/space_20" android:paddingRight="@dimen/space_20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/item_index_dianji" android:paddingLeft="@dimen/space_05" android:paddingTop="@dimen/space_05" android:paddingBottom="@dimen/space_05" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:layout_marginBottom="@dimen/space_10">
+                <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/cursor_color" android:gravity="center_vertical" android:id="@+id/comment" android:layout_width="334dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="标题标。。。" android:layout_toLeftOf="@+id/item_index_num" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/temp_tv_color" android:ellipsize="end" android:id="@+id/item_index_num" android:layout_marginTop="@dimen/space_05" android:layout_marginRight="@dimen/space_04" android:text="0" android:maxLength="5" android:layout_toLeftOf="@+id/item_index_dianzhan" style="@style/w_wh_w"/>
+                <ImageView android:id="@+id/item_index_dianzhan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_03" android:src="@drawable/hand_like_disable" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/item_index_pltx" android:layout_width="@dimen/space_66" android:layout_height="@dimen/space_66" android:src="@drawable/avatar" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:background="@color/tempColor" android:padding="@dimen/space_10" android:layout_width="match_parent" android:layout_height="@dimen/space_66" android:layout_toRightOf="@+id/item_index_pltx">
+                    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/cursor_color" android:ellipsize="end" android:id="@+id/item_index_plname" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="地球是人类共同的家园共同的家园共同的家园共同的家园共同的家园" android:maxLines="1"/>
+                    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/cursor_color" android:ellipsize="end" android:id="@+id/item_index_plname2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_05" android:text="地球是人类共同的家园共同的家园共同的家园共同的家园共同的家园" android:maxLines="1" android:layout_toRightOf="@+id/item_index_pltx"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/layout2" android:paddingLeft="@dimen/space_20" android:paddingRight="@dimen/space_20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/temp_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:layout_marginBottom="@dimen/space_05">
+                <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/cursor_color" android:text="回复  " style="@style/w_wh_w"/>
+                <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/newsmore_color_new" android:id="@+id/user_nick_name" android:text="Nick Chen ：" style="@style/w_wh_w"/>
+                <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/cursor_color" android:id="@+id/item_index_comment" android:text="我完全同意你的观点" style="@style/w_wh_w"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/cursor_color" android:id="@+id/souce_comment" android:background="@color/tempColor" android:padding="@dimen/space_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_06" android:layout_marginBottom="@dimen/space_05" android:text="我完全同意你的观点" android:layout_below="@+id/temp_layout"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/recommend_line_gray" android:layout_width="match_parent" android:layout_height="@dimen/space_0_5" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_20" android:layout_marginRight="@dimen/space_20"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/seaching" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <RelativeLayout android:paddingTop="@dimen/listview_items_padding_top_bottom" android:paddingBottom="@dimen/listview_items_padding_top_bottom" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_centerHorizontal="true">
+            <ProgressBar android:id="@id/progress" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_centerVertical="true" style="@style/loadingwhite" />
+            <TextView android:textSize="@dimen/text_size_medium" android:ellipsize="marquee" android:id="@id/listview_item_line_one" android:paddingLeft="@dimen/listview_items_padding_left_top" android:paddingRight="@dimen/listview_items_padding_right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="正在搜索设备..." android:singleLine="true" android:maxLength="29" android:layout_toRightOf="@id/listview_item_image" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_small" android:ellipsize="end" android:id="@id/listview_item_line_two" android:paddingLeft="@dimen/listview_items_padding_left_top" android:paddingTop="@dimen/listview_items_padding_small_top" android:paddingRight="@dimen/listview_items_padding_right" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="正在搜索设备..." android:singleLine="true" android:layout_toRightOf="@id/listview_item_image" android:layout_below="@id/listview_item_line_one" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:src="@drawable/tpexplain" android:scaleType="fitCenter" />
+</LinearLayout>

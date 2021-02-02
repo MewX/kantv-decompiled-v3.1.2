@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/item_filter_ll" android:paddingLeft="@dimen/space_05" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/txt_size_13sp" android:textColor="#ff666666" android:id="@+id/item_screen_text" android:paddingLeft="@dimen/space_15" android:paddingTop="@dimen/space_06" android:paddingRight="@dimen/space_15" android:paddingBottom="@dimen/space_06" android:text="筛选" style="@style/w_wh_w"/>
+</LinearLayout>

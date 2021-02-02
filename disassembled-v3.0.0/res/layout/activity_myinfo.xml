@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/common_title_layout" />
+    <RelativeLayout android:id="@id/info_avatar" android:layout_width="fill_parent" android:layout_height="@dimen/height_76">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/head_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="头像" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_15" android:layout_alignParentRight="true">
+            <com.kantv.ui.view.CircleImageView android:id="@id/avatar" android:layout_width="@dimen/width_38" android:layout_height="@dimen/height_38" android:src="@drawable/avatar" />
+            <ImageView android:layout_width="@dimen/width_10" android:layout_height="@dimen/height_14" android:layout_marginLeft="@dimen/space_10" android:src="@drawable/right_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/info_nickname" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/nicheng_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="昵称" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:gravity="right" android:id="@id/nickname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:hint="请输入昵称" android:drawableRight="@drawable/right_arrow" android:drawablePadding="@dimen/space_08" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/info_birth" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/shengri_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="生日" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:id="@id/birth_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:text="" android:drawableRight="@drawable/right_arrow" android:drawablePadding="@dimen/space_08" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/info_sex" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/sex_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="性别" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:id="@id/sex_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:text="" android:drawableRight="@drawable/right_arrow" android:drawablePadding="@dimen/space_08" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/info_area" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="地区" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:id="@id/area_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:text="" android:drawableRight="@drawable/right_arrow" android:drawablePadding="@dimen/space_08" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/info_home" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/home_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="家乡" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:id="@id/home_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:text="" android:drawableRight="@drawable/right_arrow" android:drawablePadding="@dimen/space_08" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/info_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/height_76">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="主页背景" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_15" android:layout_alignParentRight="true">
+            <com.kantv.ui.view.ShapedImageView android:id="@id/bg_img" android:layout_width="@dimen/width_70" android:layout_height="@dimen/height_44" android:src="@drawable/placeholder2" android:scaleType="fitXY" app:round_radius="@dimen/space_04" app:shape_mode="round_rect" />
+            <ImageView android:layout_width="@dimen/width_10" android:layout_height="@dimen/height_14" android:layout_marginLeft="@dimen/space_10" android:src="@drawable/right_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/info_about" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="个人简介" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:ellipsize="end" android:gravity="right" android:id="@id/about_tv" android:layout_width="@dimen/width_190" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:text="" android:maxLines="1" android:drawableRight="@drawable/right_arrow" android:drawablePadding="@dimen/space_08" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

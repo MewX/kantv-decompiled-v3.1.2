@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/tab_top_bg" android:layout_width="fill_parent" android:layout_height="@dimen/height_58">
+        <ImageView android:id="@id/mine_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_29" android:layout_marginRight="@dimen/space_15" android:src="@drawable/settings" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/fragment_mine_top" android:background="@color/tab_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/wh_w">
+                    <com.kantv.ui.view.CircleImageView android:id="@id/mine_head" android:layout_width="@dimen/width_68" android:layout_height="@dimen/height_68" android:layout_marginLeft="@dimen/space_25" android:layout_marginRight="@dimen/space_15" android:src="@drawable/avatar" />
+                    <RelativeLayout android:id="@id/mine_nologin_rl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/txt_size_17sp" android:textColor="@color/white" android:id="@id/frg_tab_mine_login" android:text="登录/注册" style="@style/w_wh_w" />
+                        <TextView android:textSize="@dimen/txt_size_13sp" android:textColor="@color/white" android:layout_marginTop="@dimen/space_02" android:text="立即登录，精彩同步" android:layout_below="@id/frg_tab_mine_login" style="@style/w_wh_w" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mine_inlogin_rl" android:visibility="visible" style="@style/wh_w">
+                        <LinearLayout android:orientation="vertical" style="@style/w_wh_w">
+                            <TextView android:textSize="@dimen/txt_size_17sp" android:textColor="@color/white" android:id="@id/mine_name" style="@style/w_wh_w" />
+                            <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/white" android:background="@drawable/mine_edit_bg" android:paddingLeft="@dimen/space_10" android:paddingTop="@dimen/space_04" android:paddingRight="@dimen/space_07" android:paddingBottom="@dimen/space_05" android:layout_width="@dimen/width_66" android:layout_height="@dimen/height_25" android:layout_marginTop="@dimen/space_10" android:text="编辑" android:drawableLeft="@drawable/mine_edit" android:drawablePadding="@dimen/space_04" />
+                        </LinearLayout>
+                        <ImageView android:padding="@dimen/space_06" android:layout_marginRight="@dimen/space_25" android:src="@drawable/arrow_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/w_wh_w" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:background="@color/tab_top_bg" android:paddingTop="@dimen/space_30" android:layout_width="fill_parent" android:layout_height="@dimen/space_44">
+                <com.kantv.ui.view.WaveView android:id="@id/waveView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/frg_tab_mine_msg" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/height_98">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_37">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_news" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_09" android:text="我的消息" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_75">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_watch" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_09" android:text="看单" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_75">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/offline_video" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_09" android:text="离线视频" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/set_message" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/height_52" android:layout_marginTop="@dimen/space_12">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_marginLeft="@dimen/space_15" android:text="我的消息" android:layout_weight="1.0" style="@style/w_wh_w" />
+                <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/set_video_cache" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_marginLeft="@dimen/space_15" android:text="离线视频" android:layout_weight="1.0" style="@style/w_wh_w" />
+                <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/myCollect_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_marginLeft="@dimen/space_15" android:text="我的收藏" android:layout_weight="1.0" style="@style/w_wh_w" />
+                <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/myCollectNews_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_marginLeft="@dimen/space_15" android:text="我的资讯" android:layout_weight="1.0" style="@style/w_wh_w" />
+                <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/watch_history_ll" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_marginLeft="@dimen/space_15" android:text="观看记录" android:layout_weight="1.0" style="@style/w_wh_w" />
+                <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/watch_history" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/height_152" android:layout_marginLeft="@dimen/space_15" android:layout_marginBottom="@dimen/space_15" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/aboutus" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_marginLeft="@dimen/space_15" android:text="关于我们" android:layout_weight="1.0" style="@style/w_wh_w" />
+                <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/disclaimer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_marginLeft="@dimen/space_15" android:text="免责声明" android:layout_weight="1.0" style="@style/w_wh_w" />
+                <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/versionUpdate" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:padding="@dimen/space_15" android:text="检查更新" android:layout_weight="1.0" style="@style/w_wh_w" />
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:id="@id/version_tv" android:padding="@dimen/space_08" android:visibility="visible" android:text="1.0.0" style="@style/w_wh_w" />
+                <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/profile_arrow" style="@style/wh1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/shareKTV" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:layout_marginLeft="@dimen/space_15" android:text="分享看TV" android:layout_weight="1.0" style="@style/w_wh_w" />
+                <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

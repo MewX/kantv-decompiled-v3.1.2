@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.85"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/guide_ok" android:background="@drawable/guide_btn_shape" android:paddingLeft="@dimen/space_25" android:paddingRight="@dimen/space_25" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_marginTop="@dimen/space_22" android:text="知道了，开启影视之旅" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="@drawable/right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="22.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快进10秒" android:drawableBottom="@drawable/fast" android:drawablePadding="@dimen/space_10" />
+    </LinearLayout>
+</LinearLayout>

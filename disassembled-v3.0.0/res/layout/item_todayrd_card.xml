@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_card_ll" android:padding="@dimen/space_05" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/item_card_img_rl" android:layout_width="wrap_content" android:layout_height="@dimen/height_97">
+        <com.kantv.ui.view.ShapedImageView android:id="@id/item_card_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:round_radius="4.0dip" app:shape_mode="round_rect" />
+        <View android:background="@drawable/banner_bg" android:layout_width="fill_parent" android:layout_height="@dimen/space_30" android:layout_alignParentBottom="true" android:alpha="0.8" />
+        <TextView android:textSize="@dimen/txt_size_11sp" android:textColor="@color/white" android:id="@id/item_update" android:layout_marginLeft="@dimen/space_05" android:layout_marginBottom="@dimen/space_02" android:text="" android:layout_alignParentBottom="true" style="@style/w_wh_w" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/space_08" android:paddingRight="@dimen/space_08" android:layout_marginBottom="@dimen/space_02" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/w_wh_w">
+            <TextView android:textSize="@dimen/txt_size_11sp" android:textColor="@color/tab_top_bg" android:id="@id/item_number1" android:text="" style="@style/w_wh_w" />
+            <TextView android:textSize="@dimen/txt_size_11sp" android:textColor="@color/tab_top_bg" android:id="@id/item_number2" android:text="" android:layout_alignParentBottom="true" style="@style/w_wh_w" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="@color/cursor_color" android:ellipsize="end" android:id="@id/item_card_name" android:layout_marginTop="@dimen/space_06" android:text="标题" android:maxLines="1" style="@style/w_wh_w" />
+    <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/tv_card_desc_color" android:ellipsize="end" android:id="@id/item_card_desc" android:text="描述" android:maxLines="1" style="@style/w_wh_w" />
+</LinearLayout>

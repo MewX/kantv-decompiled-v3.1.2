@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/item_recommend_refresh" android:background="@drawable/footer_shape_bg" android:layout_width="fill_parent" android:layout_height="@dimen/height_46" android:layout_marginLeft="@dimen/space_05" android:layout_marginTop="@dimen/space_10" android:layout_marginRight="@dimen/space_05" android:layout_marginBottom="@dimen/space_10" android:layout_weight="1.0">
+        <ImageView android:id="@id/footer_recommend_temp_img" android:src="@drawable/refresh" style="@style/w_wh_w" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/temp_tv_color" android:id="@id/footer_recommend_temp_tv" android:layout_marginLeft="@dimen/space_10" android:text="换一批看看" style="@style/w_wh_w" />
+    </LinearLayout>
+</LinearLayout>

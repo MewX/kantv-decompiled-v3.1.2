@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootli" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/offline_video_header_layout"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/cache_ll" android:background="@color/video_cache_edit_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height_44">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:paddingRight="@dimen/space_09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_19" android:src="@drawable/cache_downloading"/>
+                <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="@color/cursor_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在缓存"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="@color/temp_tv_color" android:id="@+id/download_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0个视频"/>
+                <ImageView android:paddingLeft="@dimen/space_08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_20" android:src="@drawable/right_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.kantv.lib.recyclerview.XRecyclerView android:id="@+id/offline_video_recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:id="@+id/noCacheVideo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无已缓存影视" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/noDataRl" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp">
+        <TextView android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您还没有下载内容哦~" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/delete_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height_50" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@+id/all_video_choice" android:background="@color/whitback" android:layout_width="0dp" android:layout_height="match_parent" android:text="全选" android:layout_weight="1"/>
+        <TextView android:textColor="@color/red" android:gravity="center" android:id="@+id/video_delete" android:background="@color/whitback" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:text="删除" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

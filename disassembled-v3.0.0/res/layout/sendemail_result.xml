@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_layout" />
+    <RelativeLayout android:gravity="right" android:id="@id/verlogin_tip_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_08">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/email_pop" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sendemail_result_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_05">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="22.0sp" android:textColor="@color/cursor_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送成功" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20" android:src="@drawable/sendemail_success" />
+            <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:id="@id/sendemail_result_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_43" android:layout_marginTop="@dimen/space_20" android:layout_marginRight="@dimen/space_43" android:text="@string/sendemail_resetpwd_tip" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/sendemail_verify" android:background="@drawable/login_img_btn" android:layout_width="fill_parent" android:layout_height="@dimen/height_49" android:layout_marginLeft="@dimen/space_43" android:layout_marginTop="@dimen/space_24" android:layout_marginRight="@dimen/space_43" android:text="前往邮箱验证" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/resend_email" android:padding="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="@color/temp_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:text="未收到邮件？" />
+        <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="@color/item_filter_color" android:id="@id/resend_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:text="重新发送" />
+    </LinearLayout>
+</LinearLayout>

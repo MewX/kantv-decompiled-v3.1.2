@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout style="@style/wh_w">
+        <TextView android:textSize="@dimen/txt_size_18sp" android:textColor="@color/cursor_color" android:text="选集" android:layout_centerInParent="true" style="@style/w_wh_w"/>
+        <ImageView android:id="@+id/bottomview_videodeta_close" android:padding="@dimen/space_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_20" android:src="@drawable/delete" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/bottomview_videodata_recycleview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/space_22"/>
+</LinearLayout>

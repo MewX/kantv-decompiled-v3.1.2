@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/dialog_share_style1">
+        <RadioGroup android:orientation="horizontal" android:id="@id/newsdetail_font_size" android:layout_width="fill_parent" android:layout_height="@dimen/height_30" android:layout_marginLeft="@dimen/space_15" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:layout_marginBottom="@dimen/space_15" android:layout_centerInParent="true">
+            <RadioButton android:textSize="12.0sp" android:textColor="@color/setting_option_text_color" android:gravity="center" android:id="@id/news_size_small" android:background="@drawable/newsmore_bg_option_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/action_small_font" android:layout_weight="1.0" style="@style/setting_option_center" />
+            <RadioButton android:textSize="12.0sp" android:textColor="@color/setting_option_text_color" android:gravity="center" android:id="@id/news_size_medium" android:background="@drawable/newsmore_bg_option_mid" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="-0.5dip" android:checked="true" android:text="@string/action_medium_font" android:layout_weight="1.0" style="@style/setting_option_center" />
+            <RadioButton android:textSize="12.0sp" android:textColor="@color/setting_option_text_color" android:gravity="center" android:id="@id/news_size_big" android:background="@drawable/newsmore_bg_option_mid" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="-1.0dip" android:text="@string/action_big_font" android:layout_weight="1.0" style="@style/setting_option_center" />
+            <RadioButton android:textSize="12.0sp" android:textColor="@color/setting_option_text_color" android:gravity="center" android:id="@id/news_size_large" android:background="@drawable/newsmore_bg_option_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="-1.0dip" android:text="@string/action_large_font" android:layout_weight="1.0" style="@style/setting_option_center" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout style="@style/dialog_share_style1">
+        <LinearLayout android:id="@id/newsmore_collect_layout" style="@style/dialog_share_style2">
+            <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/newsmore_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏" android:drawableTop="@drawable/newsmore_favorite" android:drawablePadding="@dimen/space_06" />
+        </LinearLayout>
+        <LinearLayout style="@style/dialog_share_style2">
+            <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/newsmore_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我要报错" android:drawableTop="@drawable/newsmore_error" android:drawablePadding="@dimen/space_06" />
+        </LinearLayout>
+        <LinearLayout style="@style/dialog_share_style2" />
+        <LinearLayout style="@style/dialog_share_style2" />
+    </LinearLayout>
+    <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/dialog_newsmore_exit" android:background="#fff2f2f2" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:text="取消" style="@style/wh1.Font16" />
+</LinearLayout>

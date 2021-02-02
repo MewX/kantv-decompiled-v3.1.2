@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/top_history_ll" style="@style/wh_w">
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:padding="@dimen/space_15" android:text="搜索历史" android:layout_weight="1" style="@style/w_wh_w"/>
+        <ImageView android:id="@+id/search_clear" android:padding="@dimen/space_15" android:src="@drawable/search_history_delete" style="@style/w_wh_w"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_history_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15"/>
+    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:padding="@dimen/space_15" android:text="热门搜索" style="@style/w_wh_w"/>
+</LinearLayout>

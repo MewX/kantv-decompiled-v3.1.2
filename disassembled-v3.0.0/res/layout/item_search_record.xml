@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/cursor_color" android:ellipsize="end" android:gravity="center" android:id="@id/item_record_tv" android:background="@drawable/item_search_record_bg" android:paddingTop="@dimen/space_07" android:paddingBottom="@dimen/space_07" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:layout_marginTop="@dimen/space_10" android:layout_marginRight="@dimen/space_15" android:layout_marginBottom="@dimen/space_10" android:text="@string/app_name" android:maxLines="1" />
+</LinearLayout>

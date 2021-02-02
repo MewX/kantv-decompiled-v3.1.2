@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/item_state_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/wh_w">
+        <com.kantv.ui.view.ShapedImageView android:id="@+id/item_state_img" android:layout_width="@dimen/width_40" android:layout_height="@dimen/height_26" android:layout_marginLeft="@dimen/space_30" android:layout_marginTop="@dimen/space_20" android:layout_marginBottom="@dimen/space_20" android:src="@drawable/australia" android:scaleType="fitXY" app:round_radius="4dp" app:shape_mode="1"/>
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@+id/item_state_name" android:layout_marginLeft="@dimen/space_10" android:text="澳大利亚" android:layout_weight="1" style="@style/w_wh_w"/>
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="#ff888888" android:id="@+id/item_selectstate_area" android:layout_marginRight="@dimen/space_30" android:text="+61" style="@style/w_wh_w"/>
+    </LinearLayout>
+    <View android:layout_marginLeft="@dimen/space_30" android:layout_marginRight="@dimen/space_30" style="@style/style_line_horizontal"/>
+</LinearLayout>

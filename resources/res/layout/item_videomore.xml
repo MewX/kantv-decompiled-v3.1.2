@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/videomore_layout" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.8">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/videomore_content_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/videoset_cache" android:padding="@dimen/space_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="缓存" android:drawableTop="@drawable/videoset_download" android:drawablePadding="@dimen/space_06"/>
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/videoset_airplay" android:padding="@dimen/space_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投屏" android:drawableTop="@drawable/videoset_screening" android:drawablePadding="@dimen/space_06"/>
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/videoset_lineswitch" android:padding="@dimen/space_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="切换源" android:drawableTop="@drawable/videoset_line" android:drawablePadding="@dimen/space_06"/>
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/videoset_timer" android:padding="@dimen/space_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定时关" android:drawableTop="@drawable/videoset_timing" android:drawablePadding="@dimen/space_06"/>
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/videoset_collect" android:padding="@dimen/space_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加收藏" android:drawableTop="@drawable/videoset_collection" android:drawablePadding="@dimen/space_06"/>
+        </LinearLayout>
+        <View android:layout_gravity="center_horizontal" android:background="#4d4d4d" android:layout_width="@dimen/width_420" android:layout_height="@dimen/space_0_5"/>
+        <LinearLayout android:orientation="vertical" android:layout_marginTop="@dimen/space_10" android:layout_marginBottom="@dimen/space_12" style="@style/wh2.linear2">
+            <TextView android:layout_marginLeft="@dimen/space_10" android:text="倍速播放：" style="@style/wh1.Font14.gray"/>
+            <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/group" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <RadioButton android:id="@+id/rb1" android:text="0.5X" style="@style/wh1.videoplaybt"/>
+                <RadioButton android:id="@+id/rb2" android:text="0.75X" style="@style/wh1.videoplaybt"/>
+                <RadioButton android:id="@+id/rb3" android:checked="true" android:text="1X" style="@style/wh1.videoplaybt"/>
+                <RadioButton android:id="@+id/rb4" android:text="1.25X" style="@style/wh1.videoplaybt"/>
+                <RadioButton android:id="@+id/rb5" android:text="1.5X" style="@style/wh1.videoplaybt"/>
+                <RadioButton android:id="@+id/rb6" android:text="2X" style="@style/wh1.videoplaybt"/>
+                <RadioButton android:id="@+id/rb7" android:text="3X" style="@style/wh1.videoplaybt"/>
+                <RadioButton android:id="@+id/rb8" android:text="5X" style="@style/wh1.videoplaybt"/>
+            </RadioGroup>
+        </LinearLayout>
+        <View android:layout_gravity="center_horizontal" android:background="#4d4d4d" android:layout_width="@dimen/width_420" android:layout_height="@dimen/space_0_5" android:layout_marginTop="@dimen/space_05"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/fulldisplay_layout" android:padding="@dimen/space_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/gray" android:layout_width="0dp" android:layout_height="wrap_content" android:text="满屏显示（字幕可能被截断）:" android:layout_weight="1"/>
+            <Switch android:id="@+id/fullDisplaySwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/switch_ios_thumb" android:track="@drawable/switch_ios_track_selector"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/autoskip_layout" android:padding="@dimen/space_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/gray" android:layout_width="0dp" android:layout_height="wrap_content" android:text="自动跳过片头片尾:" android:layout_weight="1"/>
+            <Switch android:id="@+id/autoSkipSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:thumb="@drawable/switch_ios_thumb" android:track="@drawable/switch_ios_track_selector"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@color/transparent" style="@style/wh2.linear2">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_10" android:src="@drawable/videoset_darken"/>
+            <SeekBar android:id="@+id/seekbar2" android:layout_width="@dimen/width_330" android:layout_height="@dimen/space_30" android:maxHeight="@dimen/space_02" android:max="255" android:progress="0" android:progressDrawable="@drawable/seekbar_bg" android:thumb="@drawable/seek_thumb"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_10" android:src="@drawable/videoset_brighten"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@color/transparent" style="@style/wh2.linear2">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_10" android:src="@drawable/videoset_small_volume"/>
+            <SeekBar android:id="@+id/seekbar1" android:layout_width="@dimen/width_330" android:layout_height="@dimen/height_30" android:maxHeight="@dimen/space_02" android:max="15" android:progress="0" android:progressDrawable="@drawable/seekbar_bg" android:thumb="@drawable/seek_thumb"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_10" android:src="@drawable/videoset_loud_volume"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/play_delay_contain" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/gray" android:padding="0dp" android:layout_marginLeft="@dimen/space_20" android:text="@string/close_player_delay" style="@style/wh1.play_delay"/>
+        <TextView android:id="@+id/on_close" android:tag="-1" android:layout_marginLeft="@dimen/space_20" android:text="@string/on_close" style="@style/wh1.play_delay"/>
+        <TextView android:id="@+id/play_over" android:tag="-2" android:layout_marginLeft="@dimen/space_20" android:text="@string/play_over" style="@style/wh1.play_delay"/>
+        <TextView android:id="@+id/play_over_30" android:tag="30" android:layout_marginLeft="@dimen/space_20" android:text="30:00" style="@style/wh1.play_delay"/>
+        <TextView android:id="@+id/play_over_60" android:tag="60" android:layout_marginLeft="@dimen/space_20" android:text="60:00" style="@style/wh1.play_delay"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/result_searchbox_layout" layout="@layout/search_box"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:scrollbars="none" style="@style/w_mh_m">
+            <LinearLayout android:orientation="vertical" android:id="@+id/content" android:background="@color/white" android:visibility="gone" style="@style/wh_w">
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textStyle="bold" android:textColor="@color/cursor_color" android:id="@+id/frg_star_txt" android:layout_marginLeft="@dimen/space_10" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_10" android:text="@string/about_star" style="@style/w_wh_w"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/fragment_videodetail_star" android:paddingLeft="@dimen/space_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_10"/>
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textStyle="bold" android:textColor="@color/cursor_color" android:id="@+id/frg_video_txt" android:layout_marginLeft="@dimen/space_10" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_10" android:text="@string/about_video" style="@style/w_wh_w"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/fragment_videodetail_video" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_10"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/look_more_video" android:background="@drawable/footer_shape_bg" android:layout_width="match_parent" android:layout_height="@dimen/height_46" android:layout_marginLeft="@dimen/space_10" android:layout_marginTop="@dimen/space_10" android:layout_marginRight="@dimen/space_10" android:layout_marginBottom="@dimen/space_10" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textColor="@color/temp_tv_color" android:id="@+id/look_more_video_txt" android:layout_marginLeft="@dimen/space_10" android:text="@string/look_more_video" style="@style/w_wh_w"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/txt_size_16sp" android:textStyle="bold" android:textColor="@color/cursor_color" android:id="@+id/frg_new_txt" android:layout_marginLeft="@dimen/space_10" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_10" android:text="@string/about_new" style="@style/w_wh_w"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/fragment_new_star" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_10"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/look_more_new" android:background="@drawable/footer_shape_bg" android:layout_width="match_parent" android:layout_height="@dimen/height_46" android:layout_marginLeft="@dimen/space_10" android:layout_marginTop="@dimen/space_10" android:layout_marginRight="@dimen/space_10" android:layout_marginBottom="@dimen/space_10" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textColor="@color/temp_tv_color" android:id="@+id/look_more_new_txt" android:layout_marginLeft="@dimen/space_10" android:text="@string/look_more_new" style="@style/w_wh_w"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/loaderror_ll" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="@dimen/width_56" android:layout_height="@dimen/height_56" android:layout_marginTop="@dimen/space_100" android:src="@drawable/search_empty"/>
+            <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="@color/temp_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20" android:text="抱歉，暂未搜索到相关内容"/>
+            <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/request_film_tv" android:background="@drawable/request_film_shape" android:layout_width="@dimen/width_180" android:layout_height="@dimen/height_44" android:layout_marginTop="@dimen/space_30" android:text="我要求片"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/trans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/full_shareUnlock" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/full_shareImg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/placeholder2" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="left" android:id="@id/full_shareDelImg" android:padding="@dimen/space_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_back" />
+    </FrameLayout>
+</RelativeLayout>

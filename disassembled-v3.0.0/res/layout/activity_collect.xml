@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/collect_title" layout="@layout/common_title_layout" />
+    <com.kantv.lib.recyclerview.XRecyclerView android:id="@id/collect_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/collect_title" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/collect_edit_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/height_50" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@id/all_collect_choice" android:background="@color/whitback" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="全选" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/red" android:gravity="center" android:id="@id/collect_delete" android:background="@color/whitback" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="删除" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

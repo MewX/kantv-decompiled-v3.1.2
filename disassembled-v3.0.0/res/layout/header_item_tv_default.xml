@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kantv.lib.gallery.GalleryViewPager android:id="@id/view_pager" android:background="#ffffffff" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/height_166" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_10" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_10">
+        <TextView android:textColor="@color/tv_card_desc_color" android:gravity="center" android:id="@id/hot_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/hot_tv_str" android:drawableTop="@drawable/hot" android:drawablePadding="@dimen/space_05" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/tv_card_desc_color" android:gravity="center" android:id="@id/soare_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/soare_tv_str" android:drawableTop="@drawable/soaring" android:drawablePadding="@dimen/space_05" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/tv_card_desc_color" android:gravity="center" android:id="@id/update_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/update_tv_str" android:drawableTop="@drawable/update" android:drawablePadding="@dimen/space_05" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/tv_card_desc_color" android:gravity="center" android:id="@id/history_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/history_tv_str" android:drawableTop="@drawable/history" android:drawablePadding="@dimen/space_05" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/tv_card_desc_color" android:gravity="center" android:id="@id/cache_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cache_tv_str" android:drawableTop="@drawable/download" android:drawablePadding="@dimen/space_05" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/video_weatherrate_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_15">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/video_rate_img" android:visibility="gone" android:layout_width="@dimen/width_162" android:layout_height="@dimen/height_20" />
+            <TextView android:textSize="@dimen/txt_size_14sp" android:id="@id/video_rate_tv" android:layout_width="fill_parent" android:layout_height="@dimen/height_20" android:layout_marginTop="@dimen/space_04" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/video_weather_img" android:visibility="gone" android:layout_width="@dimen/width_162" android:layout_height="@dimen/height_20" />
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_04">
+                <com.kantv.ui.view.WeatherIconView android:id="@id/imageWeatherIcon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/tabtxt_color_selected" android:id="@id/video_weather_tv" android:layout_width="wrap_content" android:layout_height="@dimen/height_20" android:layout_marginLeft="@dimen/space_02" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.kantv.ui.view.ShapedImageView android:id="@id/ad_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:scaleType="fitXY" app:round_radius="@dimen/space_04" app:shape_mode="round_rect" />
+    <View android:layout_gravity="center_horizontal" android:visibility="gone" style="@style/style_recommend_line_horizontal" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="@dimen/space_05" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_10" android:layout_marginRight="@dimen/space_10">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/txt_size_18sp" android:textColor="@color/cursor_color" android:id="@id/item_recommend_title" android:layout_marginTop="@dimen/space_10" android:text="title" style="@style/w_wh_w" />
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@id/item_recommend_more" android:layout_marginTop="@dimen/space_15" android:text="更多title" android:drawableRight="@drawable/right_arrow" android:drawablePadding="@dimen/space_04" android:layout_alignParentRight="true" style="@style/w_wh_w" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/header_item_today_recommend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_10" android:layout_marginRight="@dimen/space_10" />
+    <View android:layout_gravity="center_horizontal" android:layout_marginTop="@dimen/space_10" style="@style/style_recommend_line_horizontal" />
+    <com.kantv.ui.view.ShapedImageView android:id="@id/hot_list_img" android:layout_width="fill_parent" android:layout_height="@dimen/height_70" android:layout_marginLeft="@dimen/space_15" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:layout_marginBottom="@dimen/space_10" android:scaleType="fitXY" app:round_radius="@dimen/space_04" app:shape_mode="round_rect" />
+</LinearLayout>

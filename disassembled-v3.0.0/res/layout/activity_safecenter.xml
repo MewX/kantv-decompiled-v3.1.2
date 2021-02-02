@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_layout" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/safecenter_phone" android:background="@color/white" style="@style/wh2.linear2">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:padding="@dimen/space_15" android:text="手机号" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@id/bindphone" android:padding="@dimen/space_15" android:text="绑定后可在国内使用APP" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/wh1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/safecenter_email" android:background="@color/white" style="@style/wh2.linear2">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:padding="@dimen/space_15" android:text="邮箱" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@id/bindemail" android:padding="@dimen/space_15" android:text="绑定后可获取我们最新网址等通知" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/wh1" />
+    </LinearLayout>
+</LinearLayout>

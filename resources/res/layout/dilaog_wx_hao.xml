@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/space_75" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_22" android:layout_marginRight="@dimen/space_22">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/space65" android:layout_marginTop="@dimen/space_10" android:layout_marginBottom="@dimen/space_05">
+                <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wxhow_title" style="@style/wxhow_title1_style"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wxhow_title_detail" android:layout_below="@+id/title" style="@style/wxhow_title1_style"/>
+                <ImageView android:id="@+id/wx_hao_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mxhao_close" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wx_how_tip1" style="@style/wxhow_title3_style"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_10" android:src="@drawable/wxhao1"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wx_how_tip2" style="@style/wxhow_title2_style"/>
+            <TextView android:textSize="@dimen/txt_size_18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_05" android:text="@string/wx_how_tip3" style="@style/wxhow_title3_style"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_10" android:src="@drawable/wxhao2"/>
+            <TextView android:id="@+id/tip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wx_how_tip4" style="@style/wxhow_title2_style"/>
+            <TextView android:textSize="@dimen/txt_size_18sp" android:id="@+id/tip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_05" android:text="@string/wx_how_tip5" style="@style/wxhow_title3_style"/>
+            <RelativeLayout android:background="@drawable/wxhao3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_05">
+                <TextView android:gravity="center_horizontal" android:id="@+id/tip3" android:background="@drawable/wxhaonum" android:paddingLeft="@dimen/space_05" android:paddingTop="@dimen/space_05" android:paddingRight="@dimen/space_05" android:paddingBottom="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="480506" android:layout_centerInParent="true" style="@style/wxhow_title4_style"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/tip4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wx_how_tip6" style="@style/wxhow_title2_style"/>
+            <TextView android:textSize="@dimen/txt_size_18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_05" android:text="@string/wx_how_tip7" style="@style/wxhow_title3_style"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/txt_size_18sp" android:gravity="center" android:id="@+id/copy_code" android:background="@color/wxhao_text_color" android:layout_width="match_parent" android:layout_height="@dimen/space_55" android:text="@string/wx_how_tip8" android:layout_alignParentBottom="true" style="@style/wxhow_title4_style"/>
+</RelativeLayout>

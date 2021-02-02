@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/login_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_layout"/>
+    <LinearLayout android:background="@drawable/login_shape_bg" android:layout_width="match_parent" android:layout_height="@dimen/height_49" android:layout_marginLeft="@dimen/space_43" android:layout_marginTop="@dimen/space_22" android:layout_marginRight="@dimen/space_43">
+        <ImageView android:padding="@dimen/space_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/envelope"/>
+        <EditText android:textSize="16sp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/bind_email" android:background="@null" android:layout_width="0dp" android:layout_height="@dimen/height_30" android:layout_marginLeft="@dimen/space_15" android:hint="邮箱账号" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:inputType="textEmailAddress"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/bind_rm_email" android:padding="@dimen/space_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/input_delete"/>
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/bindemail_btn" android:background="@drawable/login_img_btn" android:layout_width="match_parent" android:layout_height="@dimen/height_49" android:layout_marginLeft="@dimen/space_43" android:layout_marginTop="@dimen/space_19" android:layout_marginRight="@dimen/space_43" android:text="发送验证邮件"/>
+</LinearLayout>

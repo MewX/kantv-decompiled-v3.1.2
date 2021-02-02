@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.7"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/wh_w">
+        <ImageView android:id="@id/bottomview_videodeta_close" android:padding="@dimen/space_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_20" android:src="@drawable/delete" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/bottomview_videodata_recycleview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_22" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_layout" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/message_received" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_80" android:layout_marginTop="@dimen/space_12">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:gravity="center_vertical" android:layout_marginLeft="@dimen/space_20" android:text="收到的评论" android:drawableLeft="@drawable/comment_received" android:drawablePadding="@dimen/space_15" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/message_send" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_80" android:layout_marginTop="@dimen/space_12">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:gravity="center_vertical" android:layout_marginLeft="@dimen/space_20" android:text="发出的评论" android:drawableLeft="@drawable/comment_send" android:drawablePadding="@dimen/space_15" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/message_agree" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_80" android:layout_marginTop="@dimen/space_12">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:gravity="center_vertical" android:layout_marginLeft="@dimen/space_20" android:text="收到的赞" android:drawableLeft="@drawable/agree" android:drawablePadding="@dimen/space_15" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/w_wh_w" />
+    </LinearLayout>
+</LinearLayout>

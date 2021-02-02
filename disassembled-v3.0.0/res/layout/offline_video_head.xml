@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/video_cache_rl" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:enabled="false" android:id="@id/video_cache_check" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/video_cache_img" android:background="@drawable/video_cache_shape_bg" android:layout_width="@dimen/width_70" android:layout_height="@dimen/height_100" android:layout_margin="@dimen/space_15" android:layout_toRightOf="@id/video_cache_check">
+        <RelativeLayout android:background="@color/lightd" android:layout_width="@dimen/width_120" android:layout_height="@dimen/height_80" android:layout_margin="@dimen/space_12">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_download" />
+                <TextView android:textSize="@dimen/txt_size_10sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="正在缓存" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/triangle" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/download_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="2.0dip" android:text="" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/txt_size_18sp" android:textColor="@color/cursor_color" android:ellipsize="end" android:id="@id/item_video_title" android:layout_marginTop="@dimen/space_12" android:layout_marginRight="@dimen/space_12" android:text="" android:maxLines="2" android:maxEms="15" android:singleLine="true" android:layout_toRightOf="@id/video_cache_img" style="@style/w_wh_w" />
+    <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="@color/temp_tv_color" android:ellipsize="end" android:id="@id/item_part" android:visibility="gone" android:layout_marginTop="@dimen/space_12" android:layout_marginRight="@dimen/space_12" android:text="暂无任务！" android:maxLines="2" android:layout_toRightOf="@id/item_video_title" style="@style/w_wh_w" />
+    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/tabtxt_color_selected" android:id="@id/item_video_name" android:layout_marginTop="70.0dip" android:text="" android:layout_toRightOf="@id/video_cache_img" style="@style/w_wh_w" />
+    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/tabtxt_color_selected" android:id="@id/pause" android:layout_marginTop="70.0dip" android:layout_marginRight="12.0dip" android:text="" android:layout_alignParentRight="true" style="@style/w_wh_w" />
+    <ProgressBar android:id="@id/progressbar" android:background="@color/tabtxt_color_selected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="12.0dip" android:max="100" android:layout_toRightOf="@id/video_cache_img" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <View android:layout_below="@id/video_cache_img" android:layout_centerHorizontal="true" style="@style/style_recommend_line_horizontal" />
+</RelativeLayout>

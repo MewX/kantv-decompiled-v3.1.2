@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/delete_ll" android:layout_alignParentTop="true" android:layout_toEndOf="@id/delete_ll">
+        <include layout="@layout/offline_video_header_layout" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/start_ll" android:background="@color/video_cache_edit_bg" android:layout_width="fill_parent" android:layout_height="@dimen/height_44">
+            <LinearLayout android:gravity="center" android:id="@id/allstart_ll" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:padding="@dimen/space_07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/start" />
+                <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部开始" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/allstop_ll" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:padding="@dimen/space_07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pause" />
+                <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部暂停" />
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/downloading_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/delete_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/height_44">
+        <Button android:id="@id/choice_all" android:background="@color/video_cache_edit_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="全选" android:layout_weight="1.0" />
+        <Button android:id="@id/delete" android:background="@color/video_cache_edit_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="删除" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

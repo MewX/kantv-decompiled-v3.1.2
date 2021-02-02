@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/search_head" android:background="@color/tab_top_bg" android:paddingTop="@dimen/space_20" style="@style/wh_w"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/search_box" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/space_30" android:layout_height="@dimen/space_30" android:layout_margin="@dimen/space_12" android:layout_weight="1.0">
+        <ImageView android:layout_width="@dimen/space_10" android:layout_height="@dimen/space_10" android:layout_marginLeft="@dimen/space_20" android:layout_marginRight="@dimen/space_08" android:src="@drawable/search_empty" />
+        <EditText android:textSize="@dimen/txt_size_14sp" android:textColor="@color/white" android:textColorHint="#ffb3deff" android:id="@id/search_edit" android:background="@null" android:layout_width="@dimen/space_0" android:layout_height="fill_parent" android:hint="输入搜索内容" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+        <ImageView android:id="@id/search_delete" android:padding="@dimen/space_08" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_delete" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="#ffd9eeff" android:gravity="center" android:id="@id/search_cancel" android:paddingLeft="@dimen/space_02" android:paddingRight="@dimen/space_02" android:layout_height="@dimen/space_30" android:layout_marginTop="@dimen/space_12" android:layout_marginRight="@dimen/space_15" android:text="取消" style="@style/w_wh_w" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_layout"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16sp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/login_nickname" android:background="@null" android:layout_width="0dp" android:layout_height="@dimen/height_30" android:layout_marginLeft="@dimen/space_15" android:hint="昵称" android:maxLines="1" android:singleLine="true" android:maxLength="16" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/rm_nickname" android:padding="@dimen/space_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/input_delete"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/txt_size_10sp" android:textColor="@color/temp_tv_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_15" android:text="@string/nickname_tip"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/wh2">
+    <RelativeLayout android:id="@+id/container" android:visibility="gone" style="@style/w_mh_m"/>
+    <RelativeLayout android:id="@+id/common_title_rl" android:background="@color/them_color" android:layout_width="match_parent" android:layout_height="@dimen/height_44">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/common_title_left" android:background="@color/them_color" android:layout_width="@dimen/width_40" android:layout_height="match_parent">
+            <ImageView android:id="@+id/common_title_leftimg" android:layout_marginLeft="@dimen/space_15" android:src="@drawable/nav_white" android:layout_centerVertical="true" style="@style/w_wh_w"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/txt_size_18sp" android:textColor="@color/white" android:id="@+id/common_title_tv" android:text="离线视频" android:layout_centerInParent="true" style="@style/w_wh_w"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/edit_ll" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <TextView android:textColor="#ffa5d3f6" android:id="@+id/offline_video_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:text="编辑" android:layout_alignBaseline="@+id/common_title_tv"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

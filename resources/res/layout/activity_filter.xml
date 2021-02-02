@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/filter_title" layout="@layout/common_title_layout"/>
+    <LinearLayout android:gravity="center" android:id="@+id/filter_toolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height_44" android:layout_below="@+id/filter_title">
+        <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/cursor_color" android:id="@+id/filter_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableRight="@drawable/row_down" android:drawablePadding="@dimen/space_08"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/filter_head" android:layout_below="@+id/filter_toolbar" style="@style/wh_w">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/filter_item_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_10"/>
+            <View android:layout_marginBottom="@dimen/space_15" style="@style/style_filter_line_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.kantv.lib.recyclerview.XRecyclerView android:id="@+id/filter_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/space_10" android:layout_marginRight="@dimen/space_10" android:layout_below="@+id/filter_head"/>
+</RelativeLayout>

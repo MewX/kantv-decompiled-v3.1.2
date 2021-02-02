@@ -1,0 +1,48 @@
+.class Lcom/transitionseverywhere/Visibility$VisibilityInfo;
+.super Ljava/lang/Object;
+.source "Visibility.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/transitionseverywhere/Visibility;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "VisibilityInfo"
+.end annotation
+
+
+# instance fields
+.field endParent:Landroid/view/ViewGroup;
+
+.field endVisibility:I
+
+.field fadeIn:Z
+
+.field startParent:Landroid/view/ViewGroup;
+
+.field startVisibility:I
+
+.field visibilityChange:Z
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 82
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/transitionseverywhere/Visibility$1;)V
+    .locals 0
+
+    .line 82
+    invoke-direct {p0}, Lcom/transitionseverywhere/Visibility$VisibilityInfo;-><init>()V
+
+    return-void
+.end method

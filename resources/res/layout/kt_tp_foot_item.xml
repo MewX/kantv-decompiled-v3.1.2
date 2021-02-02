@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/seaching" android:background="@color/white" android:layout_width="match_parent" android:layout_height="40dp">
+        <RelativeLayout android:paddingTop="@dimen/listview_items_padding_top_bottom" android:paddingBottom="@dimen/listview_items_padding_top_bottom" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_centerHorizontal="true">
+            <ProgressBar android:id="@+id/progress" android:layout_width="21dp" android:layout_height="21dp" android:layout_centerVertical="true" style="@style/loadingwhite"/>
+            <TextView android:textSize="@dimen/text_size_medium" android:ellipsize="marquee" android:id="@+id/listview_item_line_one" android:paddingLeft="@dimen/listview_items_padding_left_top" android:paddingRight="@dimen/listview_items_padding_right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="正在搜索设备..." android:singleLine="true" android:maxLength="29" android:layout_toRightOf="@+id/listview_item_image" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/text_size_small" android:ellipsize="end" android:id="@+id/listview_item_line_two" android:paddingLeft="@dimen/listview_items_padding_left_top" android:paddingTop="@dimen/listview_items_padding_small_top" android:paddingRight="@dimen/listview_items_padding_right" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="正在搜索设备..." android:singleLine="true" android:layout_toRightOf="@+id/listview_item_image" android:layout_below="@+id/listview_item_line_one"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:src="@drawable/tpexplain" android:scaleType="fitCenter"/>
+</LinearLayout>

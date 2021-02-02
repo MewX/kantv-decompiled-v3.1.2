@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_layout" />
+    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@id/forum_type_tv" android:padding="@dimen/space_15" android:layout_marginTop="@dimen/space_15" android:text="求片类型" style="@style/w_wh_w" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/forum_select_ll" android:background="@color/white" style="@style/wh2.linear2">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/forum_type" android:padding="@dimen/space_15" android:text="电视剧" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/arrow_gray" style="@style/wh1" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:padding="@dimen/space_15" android:layout_marginTop="@dimen/space_15" android:text="邮箱地址" style="@style/w_wh_w" />
+    <EditText android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:id="@id/forum_mail" android:background="@color/white" android:padding="@dimen/space_15" android:layout_width="fill_parent" android:hint="请输入邮箱地址。" style="@style/w_wh_w" />
+    <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@id/forum_content" android:padding="@dimen/space_15" android:layout_marginTop="@dimen/space_15" android:text="求片内容" style="@style/w_wh_w" />
+    <EditText android:gravity="top" android:id="@id/forum_edit" android:background="@color/white" android:padding="@dimen/space_15" android:layout_width="fill_parent" android:layout_height="@dimen/height_200" android:hint="请输入你想要的视频资源名称" android:maxLength="100" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/txt_size_18sp" android:textColor="@color/white" android:gravity="center" android:id="@id/forum_ok" android:background="@drawable/sumbit_btn_bg" android:layout_width="fill_parent" android:layout_height="@dimen/height_49" android:text="提交" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

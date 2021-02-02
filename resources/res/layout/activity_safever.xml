@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/sendemail_result_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_05">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/temp_tv_color" android:id="@+id/safever_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_20" android:text="@string/safever_tip"/>
+            <TextView android:textSize="@dimen/txt_size_22sp" android:textColor="@color/black" android:id="@+id/safever_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15"/>
+        </LinearLayout>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/send_verify" android:background="@drawable/login_img_btn" android:layout_width="match_parent" android:layout_height="@dimen/height_49" android:layout_marginLeft="@dimen/space_43" android:layout_marginTop="@dimen/space_24" android:layout_marginRight="@dimen/space_43" android:text="发送验证码"/>
+    </LinearLayout>
+</LinearLayout>

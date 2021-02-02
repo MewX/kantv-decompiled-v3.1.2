@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_layout" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/safecenter" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52" android:layout_marginBottom="@dimen/space_10">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:padding="@dimen/space_15" android:text="安全中心" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/profile_arrow" style="@style/w_wh_w" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/clearCache" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:padding="@dimen/space_15" android:text="清除缓存" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/profile_arrow" style="@style/w_wh_w" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setCachePath" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:padding="@dimen/space_15" android:text="缓存路径" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/profile_arrow" style="@style/w_wh_w" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setDownloadType" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:padding="@dimen/space_15" android:text="仅WIFI下载" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <Switch android:id="@id/downloadTypeSwitch" android:layout_marginRight="@dimen/space_15" android:checked="true" android:thumb="@drawable/switch_ios_thumb" android:track="@drawable/switch_ios_track_selector" style="@style/w_wh_w" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/customHelp" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:padding="@dimen/space_15" android:text="用户反馈" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:id="@id/wx_help" android:padding="@dimen/space_08" android:visibility="visible" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/profile_arrow" style="@style/wh1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/request_film_ll" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/cursor_color" android:padding="@dimen/space_15" android:text="我要求片" android:layout_weight="1.0" style="@style/w_wh_w" />
+        <ImageView android:layout_marginRight="@dimen/space_15" android:src="@drawable/profile_arrow" style="@style/wh1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sign_out" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_52" android:layout_marginTop="@dimen/space_20">
+        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/temp_tv_color" android:text="退出登录" style="@style/w_wh_w" />
+    </LinearLayout>
+</LinearLayout>

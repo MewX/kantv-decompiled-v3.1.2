@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_height="@dimen/height_44" style="@style/wh_w">
+        <LinearLayout android:orientation="horizontal" android:id="@id/news_detail_back" android:paddingLeft="@dimen/space_20" android:paddingTop="@dimen/space_13" android:paddingRight="@dimen/space_20" android:paddingBottom="@dimen/space_13" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/width_10" android:layout_height="@dimen/height_20" android:src="@drawable/back" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/newscomment_num_layout" android:visibility="gone" android:layout_width="@dimen/width_120" android:layout_height="@dimen/height_30" android:layout_marginRight="@dimen/space_20" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:background="@drawable/newscomment_num" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/newscomment_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newscomment_num_str" android:singleLine="true" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/news_detail_progressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/space_01" android:progressDrawable="@drawable/pg" style="?android:progressBarStyleHorizontal" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/news_detail_ll" android:visibility="visible" style="@style/wh_w">
+                <TextView android:textSize="@dimen/txt_size_22sp" android:textColor="@color/cursor_color" android:id="@id/news_detail_title" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_20" android:layout_marginBottom="@dimen/space_20" android:text="标题" style="@style/w_wh_w" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/newspage_start_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20" android:layout_marginRight="@dimen/space_20" android:layout_marginBottom="@dimen/space_20">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_below="@id/news_detail_title">
+                        <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/temp_tv_color" android:id="@id/news_detail_source" android:text="豆瓣电影" style="@style/w_wh_w" />
+                        <TextView android:textSize="@dimen/txt_size_12sp" android:textColor="@color/temp_tv_color" android:layout_gravity="bottom" android:id="@id/news_detail_time" android:layout_marginTop="@dimen/space_03" android:text="2018-03-12" style="@style/w_wh_w" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center|right" android:orientation="vertical" android:id="@id/newsdetail_rate_layout" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/newsdetail_rate_img" android:visibility="visible" android:layout_width="@dimen/width_162" android:layout_height="@dimen/height_20" />
+                        <TextView android:textSize="@dimen/txt_size_12sp" android:gravity="right" android:id="@id/newsdetail_rate_tv" android:layout_width="fill_parent" android:layout_height="@dimen/height_20" android:layout_marginTop="@dimen/space_03" android:text="111" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/news_detail_web" style="@style/wh2.linear2" />
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="@dimen/space_01" android:layout_marginLeft="@dimen/space_20" android:layout_marginRight="@dimen/space_20" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="vertical" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_30" android:layout_marginRight="@dimen/space_20" style="@style/w_mh_m">
+                    <LinearLayout android:orientation="vertical" android:background="#fff5f8fa" android:padding="@dimen/space_15" style="@style/w_mh_m">
+                        <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="#ff404040" android:paddingBottom="@dimen/space_06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="转载说明" android:drawableLeft="@drawable/edit_write" android:drawablePadding="@dimen/space_06" />
+                        <TextView android:textSize="@dimen/txt_size_13sp" android:textColor="@color/tv_card_desc_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/original_statement" />
+                    </LinearLayout>
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_30">
+                        <ImageView android:layout_gravity="center" android:id="@id/like_img" android:layout_width="@dimen/width_148" android:layout_height="@dimen/height_48" android:src="@drawable/news_like_selector" />
+                        <TextView android:textSize="@dimen/txt_size_16sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/like_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="喜欢" android:drawableLeft="@drawable/hand_like" android:drawablePadding="@dimen/space_08" />
+                    </FrameLayout>
+                    <LinearLayout style="@style/dialog_share_style1">
+                        <LinearLayout android:id="@id/news_share_circle" style="@style/dialog_share_style2">
+                            <ImageView android:src="@drawable/share_img1" style="@style/dialog_share_style3" />
+                            <TextView android:text="朋友圈" style="@style/wh1.Font12" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/news_share_friend" style="@style/dialog_share_style2">
+                            <ImageView android:src="@drawable/share_img2" style="@style/dialog_share_style3" />
+                            <TextView android:textColor="@color/temp_tv_color" android:text="微信好友" style="@style/wh1.Font12" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/news_share_weibo" style="@style/dialog_share_style2">
+                            <ImageView android:src="@drawable/share_img4" style="@style/dialog_share_style3" />
+                            <TextView android:textColor="@color/temp_tv_color" android:text="新浪微博" style="@style/wh1.Font12" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/news_share_more" style="@style/dialog_share_style2">
+                            <ImageView android:src="@drawable/news_share_more" style="@style/dialog_share_style3" />
+                            <TextView android:textColor="@color/temp_tv_color" android:text="更多" style="@style/wh1.Font12" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="@dimen/space_01" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_30" android:layout_marginRight="@dimen/space_20" android:layout_centerHorizontal="true" />
+                <LinearLayout android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_15" style="@style/wh2.linear1">
+                    <TextView android:textSize="@dimen/txt_size_20sp" android:textColor="@color/cursor_color" android:paddingTop="@dimen/space_08" android:paddingBottom="@dimen/space_08" android:text="看友评论" style="@style/w_wh_w" />
+                    <View android:background="#ff4da6eb" android:layout_width="@dimen/space_80" android:layout_height="@dimen/space_03" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/txt_size_14sp" android:textColor="@color/tv_card_desc_color" android:gravity="center" android:id="@id/news_comment_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_25" android:layout_marginBottom="@dimen/space_35" android:text="@string/news_comment_empty" android:drawableBottom="@drawable/news_comment" android:drawablePadding="@dimen/space_15" />
+                <LinearLayout android:orientation="vertical" android:id="@id/news_comment_ll" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.v7.widget.RecyclerView android:id="@id/news_comment_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/txt_size_13sp" android:textColor="@color/temp_tv_color" android:gravity="center" android:id="@id/all_newscomment_tv" android:layout_width="fill_parent" android:layout_height="@dimen/height_44" android:text="查看全部评论" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/news_loaderror_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="600.0dip">
+                <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="@color/temp_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newsdetail_show_error" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/news_detail_comment" android:layout_height="@dimen/height_50" android:layout_alignParentBottom="true" style="@style/wh2.linear2">
+        <EditText android:textSize="@dimen/txt_size_13sp" android:id="@id/news_comment" android:background="@drawable/news_comment_shape" android:paddingLeft="@dimen/space_15" android:paddingTop="@dimen/space_08" android:paddingBottom="@dimen/space_08" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/space_0" android:layout_height="@dimen/height_32" android:layout_marginLeft="@dimen/space_15" android:layout_marginTop="@dimen/space_08" android:layout_marginRight="@dimen/space_20" android:layout_marginBottom="@dimen/space_08" android:hint="来说说你的看法" android:cursorVisible="false" android:layout_weight="1.0" />
+        <ImageView android:id="@id/news_comment_iv" android:padding="@dimen/space_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/comment" />
+        <LinearLayout android:id="@id/news_detail_share" android:padding="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/news_share" />
+        </LinearLayout>
+        <ImageView android:id="@id/news_favorite" android:padding="@dimen/space_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/news_favorite_normal" />
+        <ImageView android:id="@id/news_set_more" android:padding="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_10" android:src="@drawable/news_share_more" />
+    </LinearLayout>
+</LinearLayout>

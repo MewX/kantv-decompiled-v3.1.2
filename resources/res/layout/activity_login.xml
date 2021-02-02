@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.kantv.ui.view.CustomRelativeLayout android:background="@drawable/login_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.kantv.ui.view.CustomLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_55">
+            <ImageView android:id="@+id/imageView" android:layout_width="@dimen/width_128" android:layout_height="@dimen/height_73" android:src="@drawable/logo"/>
+        </com.kantv.ui.view.CustomLinearLayout>
+        <LinearLayout android:id="@+id/ll_phone" android:background="@drawable/login_shape_bg" android:layout_width="match_parent" android:layout_height="49dp" android:layout_marginLeft="@dimen/space_43" android:layout_marginRight="@dimen/space_43" android:layout_marginBottom="@dimen/space_165" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16sp" android:textColor="#ff888888" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/login_area" android:padding="@dimen/space_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="区号" android:drawableRight="@drawable/row_down" android:drawablePadding="@dimen/space_06"/>
+            <ImageView android:id="@+id/login_email" android:padding="@dimen/space_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/envelope"/>
+            <EditText android:textSize="16sp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/login_phone" android:background="@null" android:layout_width="0dp" android:layout_height="@dimen/height_30" android:layout_marginLeft="@dimen/space_15" android:hint="邮箱账号" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:inputType="textEmailAddress"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/login_revmobile" android:padding="@dimen/space_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/input_delete"/>
+        </LinearLayout>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/login_btn" android:background="@drawable/login_img_btn" android:layout_width="match_parent" android:layout_height="@dimen/height_49" android:layout_marginLeft="@dimen/space_43" android:layout_marginRight="@dimen/space_43" android:layout_marginBottom="@dimen/space_100" android:text="即刻体验" android:layout_alignParentBottom="true"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_40" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="#ffa6a6a6" android:id="@+id/login_type" android:padding="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号登录"/>
+            <TextView android:textSize="@dimen/txt_size_15sp" android:textColor="#ffa6a6a6" android:id="@+id/jump_tv" android:padding="@dimen/space_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20" android:text="随便看看"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
